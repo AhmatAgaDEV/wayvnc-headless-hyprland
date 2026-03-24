@@ -26,7 +26,7 @@ It automatically:
 ### Download script using `wget`
 
 ```bash
-wget -q https://raw.githubusercontent.com/AhmatAgaDEV/wayvnc-headless/main/wayvnc-headless/wayvnc-headless.sh -O wayvnc-headless.sh
+wget -q "https://raw.githubusercontent.com/AhmatAgaDEV/wayvnc-headless/refs/heads/main/wayvnc-headless%20%20/wayvnc-headless.sh?token=GHSAT0AAAAAADX4BZBF74YPKDBOBQZTXCNM2OCYTCA" -O wayvnc-headless.sh
 ```
 
 > The script will be saved **in the current directory**, not in home.
@@ -65,7 +65,7 @@ chmod +x wayvnc-headless.sh
 ## One-line installation + start
 
 ```bash
-wget -q https://raw.githubusercontent.com/AhmatAgaDEV/wayvnc-headless/main/wayvnc-headless/wayvnc-headless.sh -O wayvnc-headless.sh && chmod +x wayvnc-headless.sh && ./wayvnc-headless.sh start
+wget -q "https://raw.githubusercontent.com/AhmatAgaDEV/wayvnc-headless/refs/heads/main/wayvnc-headless%20%20/wayvnc-headless.sh?token=GHSAT0AAAAAADX4BZBF74YPKDBOBQZTXCNM2OCYTCA" -O wayvnc-headless.sh && chmod +x wayvnc-headless.sh && ./wayvnc-headless.sh start
 ```
 
 ---
