@@ -1,30 +1,27 @@
 ---
 
-# **README.md — WayVNC Headless Script (wget version)**
-
-````markdown
 # WayVNC Headless Script
 
 ![WayVNC](https://img.shields.io/badge/WayVNC-Headless-blue)
 
-A simple Bash script to manage a **headless WayVNC server** on Hyprland / Wayland.  
+A simple Bash script to manage a **headless WayVNC server** on Hyprland / Wayland.
 
 It automatically:
 
-- Starts WayVNC in **nohup mode** with GPU and verbose logging (`-g -v`)  
-- Creates a **headless monitor** if not present  
-- Attaches WayVNC to the headless monitor  
-- Stops WayVNC and removes the headless monitor cleanly  
+* Starts WayVNC in **nohup mode** with GPU and verbose logging (`-g -v`)
+* Creates a **headless monitor** if not present
+* Attaches WayVNC to the headless monitor
+* Stops WayVNC and removes the headless monitor cleanly
 
 ---
 
 ## Features
 
-- **Start / Stop management**  
-- **Automatic headless monitor creation**  
-- **Works on Hyprland / Wayland setups**  
-- **PID-based process tracking**, compatible with `nohup`  
-- Easy to install and run using `wget`  
+* **Start / Stop management**
+* **Automatic headless monitor creation**
+* **Works on Hyprland / Wayland setups**
+* **PID-based process tracking**, compatible with `nohup`
+* Easy to install and run using `wget`
 
 ---
 
@@ -34,9 +31,9 @@ It automatically:
 
 ```bash
 wget -q https://raw.githubusercontent.com/AhmatAgaDEV/wayvnc-headless/main/wayvnc-headless.sh -O wayvnc-headless.sh
-````
+```
 
-> The script will be saved **in the current directory** (not in home).
+> The script will be saved **in the current directory**, not in home.
 
 ### Make it executable
 
@@ -71,8 +68,6 @@ chmod +x wayvnc-headless.sh
 
 ## One-line installation + start
 
-For a quick setup in the current directory:
-
 ```bash
 wget -q https://raw.githubusercontent.com/AhmatAgaDEV/wayvnc-headless/main/wayvnc-headless.sh -O wayvnc-headless.sh && chmod +x wayvnc-headless.sh && ./wayvnc-headless.sh start
 ```
@@ -89,7 +84,7 @@ wget -q https://raw.githubusercontent.com/AhmatAgaDEV/wayvnc-headless/main/wayvn
 
 ## Configuration
 
-* The script uses `wayvnc.pid` in `$HOME/.config/wayvnc/` to store the PID of the running WayVNC process
+* The script uses a PID file at `$HOME/.config/wayvnc/wayvnc.pid` to track the running WayVNC process
 * Headless monitor prefix is set in `HEADLESS_NAME="HEADLESS"`
 * VNC address and port can be configured:
 
@@ -102,7 +97,7 @@ VNC_PORT="5900"
 
 ## License
 
-This project is licensed under the **MIT License** – see [LICENSE](LICENSE) for details.
+This project is licensed under the **MIT License** – see LICENSE for details.
 
 ---
 
