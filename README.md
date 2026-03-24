@@ -15,7 +15,7 @@ It automatically:
 
 * **Start / Stop management**
 * **Automatic headless monitor creation**
-* **Works on Hyprland / Wayland setups**
+* **Works on Hyprland setups**
 * **PID-based process tracking**, compatible with `nohup`
 * Easy to install and run using `wget`
 
