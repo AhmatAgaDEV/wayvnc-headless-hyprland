@@ -1,42 +1,47 @@
+---
+
+# **README.md — WayVNC Headless Script (wget version)**
+
+````markdown
 # WayVNC Headless Script
 
 ![WayVNC](https://img.shields.io/badge/WayVNC-Headless-blue)
 
-A simple Bash script to manage a **headless WayVNC server** on Hyprland / Wayland.
+A simple Bash script to manage a **headless WayVNC server** on Hyprland / Wayland.  
 
 It automatically:
 
-* Starts WayVNC in **nohup mode** with GPU and verbose logging (`-g -v`)
-* Creates a **headless monitor** if not present
-* Attaches WayVNC to the headless monitor
-* Stops WayVNC and removes the headless monitor cleanly
+- Starts WayVNC in **nohup mode** with GPU and verbose logging (`-g -v`)  
+- Creates a **headless monitor** if not present  
+- Attaches WayVNC to the headless monitor  
+- Stops WayVNC and removes the headless monitor cleanly  
 
 ---
 
 ## Features
 
-* **Start / Stop management**
-* **Automatic headless monitor creation**
-* **Works on Hyprland / Wayland setups**
-* **PID-based process tracking**, compatible with `nohup`
-* Easy to install and run using `curl`
+- **Start / Stop management**  
+- **Automatic headless monitor creation**  
+- **Works on Hyprland / Wayland setups**  
+- **PID-based process tracking**, compatible with `nohup`  
+- Easy to install and run using `wget`  
 
 ---
 
 ## Installation
 
-### 1️⃣ Download the script
+### Download script using `wget`
 
 ```bash
-curl -o ~/wayvnc-headless.sh https://raw.githubusercontent.com/USERNAME/REPO_NAME/main/wayvnc-headless.sh
-```
+wget -q https://raw.githubusercontent.com/AhmatAgaDEV/wayvnc-headless/main/wayvnc-headless.sh -O wayvnc-headless.sh
+````
 
-> Replace `USERNAME` and `REPO_NAME` with your GitHub username and repository name.
+> The script will be saved **in the current directory** (not in home).
 
-### 2️⃣ Make it executable
+### Make it executable
 
 ```bash
-chmod +x ~/wayvnc-headless.sh
+chmod +x wayvnc-headless.sh
 ```
 
 ---
@@ -46,7 +51,7 @@ chmod +x ~/wayvnc-headless.sh
 ### Start WayVNC headless server
 
 ```bash
-~/wayvnc-headless.sh start
+./wayvnc-headless.sh start
 ```
 
 * Creates a headless monitor if it doesn’t exist
@@ -56,7 +61,7 @@ chmod +x ~/wayvnc-headless.sh
 ### Stop WayVNC server
 
 ```bash
-~/wayvnc-headless.sh stop
+./wayvnc-headless.sh stop
 ```
 
 * Stops WayVNC process
@@ -66,10 +71,10 @@ chmod +x ~/wayvnc-headless.sh
 
 ## One-line installation + start
 
-For a quick setup:
+For a quick setup in the current directory:
 
 ```bash
-curl -sSL https://raw.githubusercontent.com/USERNAME/REPO_NAME/main/wayvnc-headless.sh -o ~/wayvnc-headless.sh && chmod +x ~/wayvnc-headless.sh && ~/wayvnc-headless.sh start
+wget -q https://raw.githubusercontent.com/AhmatAgaDEV/wayvnc-headless/main/wayvnc-headless.sh -O wayvnc-headless.sh && chmod +x wayvnc-headless.sh && ./wayvnc-headless.sh start
 ```
 
 ---
@@ -84,7 +89,7 @@ curl -sSL https://raw.githubusercontent.com/USERNAME/REPO_NAME/main/wayvnc-headl
 
 ## Configuration
 
-* The script uses `$HOME/.config/wayvnc/wayvnc.pid` to store the PID of the running WayVNC process
+* The script uses `wayvnc.pid` in `$HOME/.config/wayvnc/` to store the PID of the running WayVNC process
 * Headless monitor prefix is set in `HEADLESS_NAME="HEADLESS"`
 * VNC address and port can be configured:
 
@@ -101,10 +106,10 @@ This project is licensed under the **MIT License** – see [LICENSE](LICENSE) fo
 
 ---
 
-### ✅ Notes
+### Notes
 
 * Always check `hyprctl monitors` to see the headless monitor name
-* The script will automatically create and remove the headless monitor on start/stop
+* The script automatically creates/removes the headless monitor on start/stop
 * Works with Android VNC apps, desktop VNC viewers, or any VNC client
 
 ---
