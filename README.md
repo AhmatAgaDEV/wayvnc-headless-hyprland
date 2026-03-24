@@ -1,5 +1,3 @@
----
-
 # WayVNC Headless Script
 
 ![WayVNC](https://img.shields.io/badge/WayVNC-Headless-blue)
@@ -12,8 +10,6 @@ It automatically:
 * Creates a **headless monitor** if not present
 * Attaches WayVNC to the headless monitor
 * Stops WayVNC and removes the headless monitor cleanly
-
----
 
 ## Features
 
