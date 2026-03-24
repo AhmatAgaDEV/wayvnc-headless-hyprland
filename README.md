@@ -2,7 +2,7 @@
 
 ![WayVNC](https://img.shields.io/badge/WayVNC-Headless-blue)
 
-A simple Bash script to manage a **headless WayVNC server** on Hyprland / Wayland.
+A simple Bash script to manage a **headless WayVNC server** on Hyprland.
 
 It automatically:
 
