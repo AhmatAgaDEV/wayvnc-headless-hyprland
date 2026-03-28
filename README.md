@@ -1,5 +1,3 @@
----
-
 # WayVNC Headless Script for Hyprland
 
 A simple **Bash script** to manage a headless WayVNC server on **Hyprland / Wayland**.
