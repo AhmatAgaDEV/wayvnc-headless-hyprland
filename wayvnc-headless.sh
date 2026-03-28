@@ -4,7 +4,7 @@
 # CONFIGURATION
 # -------------------
 HEADLESS_NAME="HEADLESS"          # Prefix for headless monitor
-VNC_ADDRESS="10.77.42.159"             # Listen on all interfaces
+VNC_ADDRESS="0.0.0.0"             # Listen on all interfaces
 VNC_PORT="5900"
 PID_FILE="$HOME/.config/wayvnc/wayvnc.pid"
 
